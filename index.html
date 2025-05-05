@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UMKM - Usaha Mikro Kecil dan Menengah</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo" tabindex="0">UMKM </div>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" tabindex="0">&#9776;</div>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" tabindex="0">Tentang Kami</a></li>
+          <li><a href="#products" tabindex="0">Produk</a></li>
+          <li><a href="#contact" tabindex="0">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" role="img" aria-label="Gambar usaha UMKM">
+      <h1>Mendukung Kemajuan Usaha Mikro, Kecil dan Menengah di Indonesia</h1>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>UMKM - Pendukung Bisnis Lokal</h2>
+      <p>
+        UMKM adalah pilar penting dalam perekonomian Indonesia. Kami membantu para pelaku UMKM untuk berkembang dengan mudah,
+        memperkenalkan produk berkualitas, dan menjangkau pasar yang lebih luas melalui website kami.
+      </p>
+    </section>
+
+    <section class="products container" id="products" aria-label="Daftar produk UMKM">
+      <h2>Produk Unggulan</h2>
+      <div class="product-list">
+        <article class="product-card" tabindex="0">
+          <img class="product-image" src="https://images.pexels.com/photos/3026807/pexels-photo-3026807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="Kerajinan tangan anyaman bambu" />
+          <div class="product-info">
+            <h3 class="product-title">Kerajinan Anyaman Bambu</h3>
+            <p class="product-description">Handicraft berkualitas yang dibuat dengan tangan terampil dan bahan bambu alami dari pengrajin lokal.</p>
+            <button class="btn-primary" aria-label="Pelajari lebih lanjut Kerajinan Anyaman Bambu">Pelajari Lebih Lanjut</button>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img class="product-image" src="https://images.pexels.com/photos/128420/pexels-photo-128420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="Makanan khas tradisional" />
+          <div class="product-info">
+            <h3 class="product-title">Makanan Tradisional</h3>
+            <p class="product-description">Kuliner khas daerah yang otentik, diproses secara higienis dan menggunakan resep turun-temurun.</p>
+            <button class="btn-primary" aria-label="Pelajari lebih lanjut Makanan Tradisional">Pelajari Lebih Lanjut</button>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img class="product-image" src="https://images.pexels.com/photos/3952230/pexels-photo-3952230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350" alt="Pakaian batik modern" />
+          <div class="product-info">
+            <h3 class="product-title">Pakaian Batik Modern</h3>
+            <p class="product-description">Koleksi fashion batik kontemporer yang menggabungkan tradisi dan gaya modern untuk segala usia.</p>
+            <button class="btn-primary" aria-label="Pelajari lebih lanjut Pakaian Batik Modern">Pelajari Lebih Lanjut</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact" aria-label="Form kontak">
+      <h2>Hubungi Kami</h2>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" name="email" placeholder="contoh@domain.com" required aria-required="true" />
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..." required aria-required="true"></textarea>
+        </div>
+        <button type="submit" class="btn-primary" aria-label="Kirim pesan">Kirim</button>
+        <div id="form-message" role="alert" aria-live="polite" style="margin-top:0.5rem;color:#007700; font-weight:700;"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 UMKM KELOMPOK . Semua hak cipta dilindungi.
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
+
